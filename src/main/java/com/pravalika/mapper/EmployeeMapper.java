@@ -13,13 +13,13 @@ public class EmployeeMapper {
                 employee.getDepartment().getDepartmentId()
         );
     }
-    public static Employee mapToEmployeeDto(EmployeeDto employeeDto){
+    public static Employee mapToEmployee(EmployeeDto employeeDto){
         Employee employee=new Employee();
         employee.setId(employeeDto.getId());
         employee.setFirstName(employeeDto.getFirstName());
         employee.setLastName(employeeDto.getLastName());
         employee.setEmail(employeeDto.getEmail());
-        employee.setDepartment(employeeDto.getDepartmentId());
+
         return employee;
     }
 }

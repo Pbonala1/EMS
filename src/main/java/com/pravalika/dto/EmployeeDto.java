@@ -1,12 +1,11 @@
 package com.pravalika.dto;
 
-import com.pravalika.entity.Department;
-
 public class EmployeeDto {
     private Long id;
     private String firstName;
     private String lastName;
     private String email;
+    private Long departmentId;
 
     public String getEmail() {
         return email;
@@ -16,7 +15,7 @@ public class EmployeeDto {
         this.email = email;
     }
 
-    private Long departmentId;
+
 
     public EmployeeDto(Long id) {
         this.id = id;
@@ -35,6 +34,8 @@ public class EmployeeDto {
         this.lastName = lastName;
         this.email = email;
         this.departmentId = departmentId;
+    }
+    public EmployeeDto() {
     }
 
     public void setId(Long id) {
@@ -65,12 +66,13 @@ public class EmployeeDto {
         return lastName;
     }
 
-    public Department getDepartmentId() {
+    public Long getDepartmentId() {
         return departmentId;
     }
 
-    public EmployeeDto() {
-    }
+
+
+
 
 
 
