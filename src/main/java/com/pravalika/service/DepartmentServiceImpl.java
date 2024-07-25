@@ -5,6 +5,7 @@ import com.pravalika.entity.Department;
 import com.pravalika.exception.ResourceNotFoundException;
 import com.pravalika.mapper.DepartmentMapper;
 import com.pravalika.repository.DepartmentRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.stream.Collectors;
 
 @Service
 public class DepartmentServiceImpl implements DepartmentService {
+    @Autowired
     private DepartmentRepository departmentRepository;
     public DepartmentDto createDepartment(DepartmentDto departmentDto){
         Department department= DepartmentMapper.mapToDepartment(departmentDto);

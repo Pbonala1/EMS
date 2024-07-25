@@ -1,9 +1,9 @@
 package com.pravalika.mapper;
 
 import com.pravalika.dto.DepartmentDto;
-import com.pravalika.dto.EmployeeDto;
+
 import com.pravalika.entity.Department;
-import com.pravalika.entity.Employee;
+
 
 public class DepartmentMapper {
 
